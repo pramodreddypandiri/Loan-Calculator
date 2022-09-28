@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Loan Calculator</title>
+</head>
+<body>
+
+    <div class="center flex flex-col justify-center items-center mt-16 ">
+        <h1 class="heading text-3xl my-6 font-bold">Loan Calculator</h1>
+        <div class="input my-10">
+            <form action="post " class="flex flex-col gap-6">
+
+            <input class=" border-2 focus:border-black p-2 w-[300px] rounded-lg" type="number" id="principle" name="principle" placeholder="Rupees" >
+            <input class=" border-2 focus:border-black p-2 w-[300px] rounded-lg" type="number" id="interest" name="interest" placeholder="Interest Rate">
+            <input class=" border-2 focus:border-black p-2 w-[300px] rounded-lg" type="number" id="tenure" name="tenure" placeholder="Tenure">
+            </form>
+        </div>
+        <div class="btn">
+            <button id="calculate" class="text-xl my-4 tracking-widest font-bold w-[300px] bg-red-500 text-white rounded-lg py-2">Calculate</button>
+        </div>
+        <div class="output w-[300px]">
+            <div class="emi-div">
+                <h3 class="text-xl font-semibold">Loan EMI</h3>
+                <div id="emi"></div>
+            </div>
+            <div class="interest-div">
+                <h3 class="text-xl font-semibold">Total Interest</h3>
+                <div id="interestpayable"></div>
+            </div>
+            <div class="totalamount-div">
+                <h3 class="text-xl font-semibold">Principle + Interest</h3>
+                <div id="totalamount"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
