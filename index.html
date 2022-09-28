@@ -15,25 +15,25 @@
             <form action="post " class="flex flex-col gap-6">
 
             <input class=" border-2 focus:border-black p-2 w-[300px] rounded-lg" type="number" id="principle" name="principle" placeholder="Rupees" >
-            <input class=" border-2 focus:border-black p-2 w-[300px] rounded-lg" type="number" id="interest" name="interest" placeholder="Interest Rate">
-            <input class=" border-2 focus:border-black p-2 w-[300px] rounded-lg" type="number" id="tenure" name="tenure" placeholder="Tenure">
+            <input class=" border-2 focus:border-black p-2 w-[300px] rounded-lg" type="number" id="interest" name="interest" placeholder="Interest Rate(%)">
+            <input class=" border-2 focus:border-black p-2 w-[300px] rounded-lg" type="number" id="tenure" name="tenure" placeholder="Tenure(Y)">
             </form>
         </div>
         <div class="btn">
             <button id="calculate" class="text-xl my-4 tracking-widest font-bold w-[300px] bg-red-500 text-white rounded-lg py-2">Calculate</button>
         </div>
-        <div class="output w-[300px]">
+        <div class="output w-[300px] hidden">
             <div class="emi-div">
-                <h3 class="text-xl font-semibold">Loan EMI</h3>
-                <div id="emi"></div>
+                <h3 class="">Loan EMI</h3>
+                <div class="text-xl font-semibold" id="emi"></div>
             </div>
             <div class="interest-div">
-                <h3 class="text-xl font-semibold">Total Interest</h3>
-                <div id="interestpayable"></div>
+                <h3 class="">Total Interest</h3>
+                <div class="text-xl font-semibold" id="interestpayable"></div>
             </div>
             <div class="totalamount-div">
-                <h3 class="text-xl font-semibold">Principle + Interest</h3>
-                <div id="totalamount"></div>
+                <h3 class="">Principle + Interest</h3>
+                <div class="text-xl font-semibold" id="totalamount"></div>
             </div>
         </div>
     </div>
